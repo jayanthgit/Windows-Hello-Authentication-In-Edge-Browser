@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <script src="webauthn.js"></script> <!-- polyfill to map Microsoft Edge experimental implementation to current W3C spec -->
+    <script src="javascript.js"></script>    
+</head>
+<body>
+    <h1>Windows Hello Tester</h1>
+  
+    </br>
+
+    <button onclick="checkUser()">Verify User</button>
+
+    </br>
+
+    <form id="theform" action="" method="post">
+        <div>
+            <label for="formid">Form ID:</label>
+            <input type="text" id="formid" name="formid" class="form-control"/>
+        </div>
+
+        <div>
+            <label for="formpk">Form PK:</label>
+            <input type="text" id="formpk" name="formpk" class="form-control"/>
+        </div>
+
+        <div>
+            <label for="formemail">Form Email:</label>
+            <input type="text" id="formemail" name="formemail" class="form-control"/>
+        </div>
+
+        <div>
+            <label for="formname">Form Name:</label>
+            <input type="text" id="formname" name="formname" class="form-control"/>
+        </div>
+
+        <div>
+            <input type="submit" id="submit" name="submit" value="Register User" class="form-control"></input>
+        </div>
+    </form>
+
+</body>
+</html>

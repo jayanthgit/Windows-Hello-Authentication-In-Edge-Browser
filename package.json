@@ -1,0 +1,10 @@
+{
+    "name": "windows-hello",
+    "main": "server.js",
+    "dependencies": {
+        "express": "~4.0.0",
+        "body-parser": "~1.0.1",
+        "jwk-to-pem": "^1.2.2",
+        "crypto":"*"
+    }
+}
